@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>京张·思想链 · 百年计划 — 视觉包 | JINGZHANG THOUGHTCHAIN Visual Package</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif; background: #0a0a1a; color: #e0e0e0; line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+    h1 { color: #f0c040; font-size: 2rem; margin-bottom: 8px; }
+    .subtitle { color: #8a8aaa; font-size: 0.95rem; margin-bottom: 40px; }
+    .subtitle span { color: #f0c040; }
+    h2 { color: #f0c040; font-size: 1.2rem; margin: 32px 0 16px; border-left: 3px solid #f0c040; padding-left: 12px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+    .card { background: #12122a; border: 1px solid #2a2a4a; border-radius: 12px; overflow: hidden; transition: transform 0.2s, border-color 0.2s; }
+    .card:hover { transform: translateY(-3px); border-color: #f0c040; }
+    .card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+    .card-body { padding: 16px; }
+    .card-title { color: #f0c040; font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+    .card-desc { color: #888; font-size: 0.82rem; }
+    .provisional-note { background: #1a1a3a; border: 1px solid #3a3a6a; border-radius: 8px; padding: 16px; margin: 24px 0; font-size: 0.85rem; color: #aaa; }
+    .provisional-note strong { color: #f0c040; }
+    .figure-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .figure-item { background: #12122a; border-radius: 8px; overflow: hidden; }
+    .figure-item img { width: 100%; height: 180px; object-fit: cover; }
+    .figure-item .label { padding: 8px 12px; font-size: 0.8rem; color: #888; }
+    .nav-back { display: inline-block; margin-bottom: 24px; color: #f0c040; text-decoration: none; font-size: 0.9rem; }
+    .nav-back:hover { text-decoration: underline; }
+    .meta { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 32px; }
+    .meta-item { font-size: 0.85rem; }
+    .meta-item .label { color: #666; }
+    .meta-item .value { color: #f0c040; }
+    .pending-badge { background: #2a1a0a; color: #f08040; border: 1px solid #f08040; border-radius: 4px; padding: 2px 8px; font-size: 0.75rem; margin-left: 8px; }
+    .complete-badge { background: #0a2a1a; color: #40f0a0; border: 1px solid #40f0a0; border-radius: 4px; padding: 2px 8px; font-size: 0.75rem; margin-left: 8px; }
+    .three-areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0; }
+    .area-card { background: #12122a; border-radius: 8px; padding: 14px; text-align: center; }
+    .area-card .name { font-size: 0.9rem; font-weight: 600; margin-bottom: 4px; }
+    .area-card .area { font-size: 0.75rem; color: #888; }
+    .area-a1 .name { color: #f08040; }
+    .area-a2 .name { color: #a060f0; }
+    .area-a3 .name { color: #40c080; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <a class="nav-back" href="../report/proposal.html">← 返回方案正文</a>
+
+  <h1>京张·思想链 · 百年计划</h1>
+  <p class="subtitle">JINGZHANG THOUGHTCHAIN — Centennial Plan | AI 融合创新带城市设计开源征集 | Iteration 2 (2026-09-09)</p>
+
+  <div class="meta">
+    <div class="meta-item"><span class="label">参赛者：</span><span class="value">yubaoyi2026 + QClaw AI Agent</span></div>
+    <div class="meta-item"><span class="label">提交级别：</span><span class="value">formal</span></div>
+    <div class="meta-item"><span class="label">边界状态：</span><span class="value">provisional<span class="pending-badge">待官方精确数据</span></span></div>
+    <div class="meta-item"><span class="label">三项核心指标：</span><span class="value">site_area_sqm / green_ratio / public_space_ratio（均需官方边界复算）</span></div>
+  </div>
+
+  <div class="provisional-note">
+    <strong>⚠️ 边界声明</strong>：本视觉包中所有几何边界（场地、绿地、公共空间）均来自 <code>provisional_boundaries.geojson</code>（DATA-SRC-PROVISIONAL-BOUNDARIES-20260605），为临时粗略边界，<strong>非官方红线</strong>，不得作为审批依据。正式指标待官方精确数据发布后复算。
+  </div>
+
+  <h2>三处重点区域</h2>
+  <div class="three-areas">
+    <div class="area-card area-a1">
+      <div class="name">A1 众智园</div>
+      <div class="area">大学城科创织补区 · 192.1 ha</div>
+    </div>
+    <div class="area-card area-a2">
+      <div class="name">A2 AI 原点社区</div>
+      <div class="area">站城缝合 · 104.3 ha</div>
+    </div>
+    <div class="area-card area-a3">
+      <div class="name">A3 大钟寺</div>
+      <div class="area">具身智能测试平台 · 72.0 ha</div>
+    </div>
+  </div>
+
+  <h2>五张设计图 <span class="complete-badge">已提交</span></h2>
+  <div class="figure-grid">
+    <div class="figure-item">
+      <img src="../assets/figures/site-overview.png" alt="site-overview" loading="lazy">
+      <div class="label">图1 · 场地总览 / Site Overview — 三区两翼+百年穿越轴</div>
+    </div>
+    <div class="figure-item">
+      <img src="../assets/figures/key-areas.png" alt="key-areas" loading="lazy">
+      <div class="label">图2 · 重点区域 / Key Areas — A1/A2/A3 三核结构</div>
+    </div>
+    <div class="figure-item">
+      <img src="../assets/figures/land-use-structure.png" alt="land-use-structure" loading="lazy">
+      <div class="label">图3 · 用地结构 / Land Use Structure — GB/T 50137-2017 分类</div>
+    </div>
+    <div class="figure-item">
+      <img src="../assets/figures/metrics-evidence.png" alt="metrics-evidence" loading="lazy">
+      <div class="label">图4 · 指标证据 / Metrics Evidence — 三项核心指标</div>
+    </div>
+    <div class="figure-item">
+      <img src="../assets/figures/mobility-bluegreen.png" alt="mobility-bluegreen" loading="lazy">
+      <div class="label">图5 · 蓝绿慢行 / Blue-Green Network — 小月河+京张公园脊柱</div>
+    </div>
+    <div class="figure-item">
+      <img src="../assets/figures/scope-calibration-map.png" alt="scope-calibration" loading="lazy">
+      <div class="label">附图 · 范围校准 / Scope Calibration — Provisional 边界示意</div>
+    </div>
+  </div>
+
+  <h2>方案全文</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-body">
+        <div class="card-title">proposal.md（中文正文）</div>
+        <div class="card-desc">14章节完整方案：三层范围、三区两翼、12张AI场景卡、6类用户画像、3个朝圣功能地标、拆改留策略、交通蓝绿、实施分期、合规矩阵</div>
+        <a href="../proposal.html" style="color:#f0c040;font-size:0.85rem;margin-top:8px;display:inline-block">在线阅读 →</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="card-title">proposal.en.md（英文译本）</div>
+        <div class="card-desc">与 proposal.md 等义的英文完整译本，覆盖所有章节、指标与合规声明</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>待专业制作 <span class="pending-badge">建议后续迭代</span></h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-body">
+        <div class="card-title">drawings/a3-booklet.pdf</div>
+        <div class="card-desc">A3 精装图册 PDF（含全部五张图+方案摘要+三区详解），建议后续迭代由专业设计师制作。本包暂以 visual/index.html 替代。</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="card-title">drawings/a0-boards.pdf</div>
+        <div class="card-desc">A0 展板 PDF（方案全景展示），建议后续迭代由专业设计师制作。本包暂以 visual/index.html 替代。</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>数据来源</h2>
+  <div class="provisional-note">
+    三层范围面积：<strong>官方公告（2026-05-09）</strong>；边界数据：<strong>provisional_boundaries.geojson（provisional，非官方红线）</strong>；用地分类：<strong>GB/T 50137-2017</strong>；地图底图：<strong>OpenStreetMap（ODbL）</strong>，标注为示意。所有数据来源详见 <a href="../sources.json" style="color:#f0c040">sources.json</a>。
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "package_type": "professional_design_package",
+  "package_state": "ready_for_review",
+  "submission_stage": "formal",
+  "proposal_id": "centennial-jingzhang",
+  "author_github": "yubaoyi2026",
+  "proposal_format_version": "2",
+  "bilingual_contract_version": "1",
+  "iteration": "2",
+  "language": "zh",
+  "title_zh": "京张·思想链 · 百年计划",
+  "title_en": "JINGZHANG THOUGHTCHAIN — Centennial Plan",
+  "translation_file": "proposal.en.md",
+  "license": "CC0-1.0",
+  "generated_at": "2026-08-31T08:00:00+08:00",
+  "updated_at": "2026-09-09T15:50:00+08:00",
+  "key_deliverables": [
+    "proposal.md",
+    "proposal.en.md",
+    "sources.json",
+    "metrics.json",
+    "compliance_matrix.json",
+    "manifest.json",
+    "assumptions.json",
+    "standard_matrix.json",
+    "design_depth_matrix.json",
+    "self_check.json",
+    "assets/figures/ (6 PNG figures)",
+    "chapters/A1-A3.md (detailed area chapters)",
+    "report/proposal.html",
+    "geometry/site_boundary.geojson (provisional)"
+  ],
+  "boundary_status": "provisional",
+  "provisional_boundary_source": "provisional_boundaries.geojson (DATA-SRC-PROVISIONAL-BOUNDARIES-20260605)",
+  "three_core_metrics": {
+    "site_area_sqm": "3684000 (A1+A2+A3, from official announcement 2026-05-09)",
+    "green_ratio": "provisional (A2≥0.30, A3≥0.25, confidence: low)",
+    "public_space_ratio": "provisional (A2≥0.15, A3≥0.12, confidence: low)"
+  }
+}

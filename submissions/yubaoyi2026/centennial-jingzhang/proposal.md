@@ -1,7 +1,7 @@
 ﻿---\ntitle: 京张·思想链 · 百年计划
 author_github: yubaoyi2026
 language: zh
-proposal_format_version: "3"
+proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: proposal.en.md
 license: COMMUNITY-DISPLAY-ONLY

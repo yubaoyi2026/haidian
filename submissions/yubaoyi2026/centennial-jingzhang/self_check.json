@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "proposal_id": "centennial-jingzhang",
+  "author_github": "yubaoyi2026",
+  "iteration": "2",
+  "self_checked_at": "2026-09-09T15:55:00+08:00",
+  "self_check_version": "persisted-self-check-v1",
+
+  "four_gates": {
+    "deterministic_validation": {
+      "status": "partial",
+      "result": "PARTIAL",
+      "notes": "proposal_format_version已修正为2；generate_scope_calibration.py已移出assets/figures；YAML front matter已修复；scope-calibration-map.png约13MB超过5MB限制，建议压缩或替换",
+      "blocking_issues": [
+        "scope-calibration-map.png (12.99MB) 超过 MAX_ASSET_BYTES (5MB)"
+      ],
+      "warnings": [
+        "proposal.en.md英译本存在，需确认与proposal.md等义性",
+        "chapters/A1-A3.md不在白名单内，已作为附加深度资料提交"
+      ]
+    },
+    "spatial_review": {
+      "status": "not_run",
+      "result": "SKIPPED",
+      "notes": "spatial_review需要shapely和pyproj依赖；当前沙盒环境可能未装；建议在满足依赖的环境下运行scripts/spatial_review.py",
+      "requirements": "pip install shapely pyproj"
+    },
+    "visual_packaging": {
+      "status": "not_run",
+      "result": "SKIPPED",
+      "notes": "visual/index.html当前缺失；visual_review需要visual/index.html存在；建议创建visual/index.html（可参考report/proposal.html结构）",
+      "blocking_issues": [
+        "visual/index.html缺失"
+      ]
+    },
+    "professional_evidence": {
+      "status": "pass_with_provisional",
+      "result": "PASS",
+      "notes": "standard_matrix.json覆盖5项标准（PROJECT-OFFICIAL-ANNOUNCEMENT/PROJECT-AGENT-OPEN-CALL-TASKBOOK/MNR-LAND-USE-CLASSIFICATION-GUIDE/MOHURD-CONTROL-DETAILED-PLANNING/MOHURD-URBAN-DESIGN-MEASURES）；design_depth_matrix.json覆盖全部15项设计深度要素；proposal_format_version=2，不要求穷举式inline引用",
+      "provisional_flags": [
+        "所有geometry指标（绿地率/公共空间比）来自provisional_boundaries.geojson，status=provisional",
+        "边界非官方红线，已在proposal.md和assumptions.json中声明"
+      ]
+    }
+  },
+
+  "overall_status": "revision-requested",
+  "self_checked_manifest_updated": true,
+  "known_limitations": [
+    "scope-calibration-map.png超过5MB，需压缩或替换为≤5MB版本",
+    "visual/index.html缺失，建议补充",
+    "spatial_review未运行（依赖缺失）",
+    "chapters/A1-A3.md不在官方白名单内，已作为附加深度资料提交"
+  ],
+  "provisional_boundary_commitment": "所有场地/绿地/公共空间边界来自provisional_boundaries.geojson（DATA-SRC-PROVISIONAL-BOUNDARIES-20260605），非官方精确数据，待官方发布后复算",
+  "compliance_status": "conceptual-proposal-with-provisional-geometry"
+}

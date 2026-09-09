@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "proposal_id": "centennial-jingzhang",
+  "author_github": "yubaoyi2026",
+  "iteration": "2",
+  "generated_at": "2026-08-31T08:00:00+08:00",
+  "updated_at": "2026-09-09T15:50:00+08:00",
+
+  "items": [
+    {
+      "item_id": "existing_conditions_diagnosis",
+      "item_title_zh": "现状诊断",
+      "item_title_en": "Existing Conditions Diagnosis",
+      "depth_level": "complete",
+      "coverage": "三层范围现状（43.6km²/11.4km²/368.4ha）、三区场地现状（A1大学城/八大学院/固定校区、A2五道口站城、A3大钟寺枢纽）、OSM边界核对（偏移~667m）",
+      "evidence_location": "proposal.md §二（三层范围与现状）、sources.json（SRC-OSM-VERIFICATION）",
+      "provisional_note": "边界为provisional，OSM核对显示约667m偏移"
+    },
+    {
+      "item_id": "three_level_scope_framework",
+      "item_title_zh": "三层范围框架",
+      "item_title_en": "Three-Level Scope Framework",
+      "depth_level": "complete",
+      "coverage": "统筹研究范围43.6km²（官方公告）、总体设计范围11.4km²（官方公告）、重点区域368.4ha（官方公告三区合计）；provisional边界已标注非官方红线",
+      "evidence_location": "proposal.md §二层范围说明、metrics.json（core_visual_metrics）、assets/figures/scope-calibration-map.png"
+    },
+    {
+      "item_id": "overall_spatial_structure",
+      "item_title_zh": "整体空间结构",
+      "item_title_en": "Overall Spatial Structure",
+      "depth_level": "complete",
+      "coverage": "三区两翼框架（A1/A2/A3三核+中关村西翼+小月河东翼）+ 京张遗址公园纵向带（9.3km思想链接轴）；site-overview.png展示整体空间结构",
+      "evidence_location": "proposal.md §二（三层范围与三区两翼框架）、assets/figures/site-overview.png"
+    },
+    {
+      "item_id": "land_use_layout",
+      "item_title_zh": "用地布局",
+      "item_title_en": "Land Use Layout",
+      "depth_level": "complete",
+      "coverage": "三区用地布局（A1教学科研用地为主/A2混合用地/A3产业用地）；GB/T 50137-2017标准分类；用地平衡表；land-use-structure.png",
+      "evidence_location": "proposal.md §用地/建筑规模与拆改留方案、assets/figures/land-use-structure.png",
+      "provisional_note": "用地边界基于provisional geometry，具体地块用地性质待官方精确数据复算"
+    },
+    {
+      "item_id": "development_intensity_controls",
+      "item_title_zh": "开发强度控制",
+      "item_title_en": "Development Intensity Controls",
+      "depth_level": "partial",
+      "coverage": "A3蓝景丽家FAR≤2.5（概念建议）、古建缓冲区FAR≤1.0/限高≤12m/密度≤25%（文保严控）；均标注conceptual proposal",
+      "evidence_location": "proposal.md §用地/建筑规模与拆改留方案（A3节）",
+      "provisional_note": "所有强度控制为概念建议，非官方控规，待官方精确数据后复算"
+    },
+    {
+      "item_id": "height_massing_character",
+      "item_title_zh": "高度/体量/风貌特征",
+      "item_title_en": "Height, Massing and Character",
+      "depth_level": "partial",
+      "coverage": "A3古建缓冲区限高≤12m；A2站城缝合带高度控制（概念建议）；整体风貌定位（大学城/科创/枢纽三区各有差异）",
+      "evidence_location": "proposal.md §蓝绿空间/城市风貌、A3章节",
+      "provisional_note": "高度控制为概念建议，非官方控规"
+    },
+    {
+      "item_id": "retain_renovate_demolish",
+      "item_title_zh": "拆改留方案",
+      "item_title_en": "Retain-Renovate-Demolish Strategy",
+      "depth_level": "complete",
+      "coverage": "A1不动校园本体织缝隙（校地共建）；A2存量更新（站城缝合/平价空间）；A3蓝景丽家转型+古建保护区严控；chapters/A1-A3.md含各区拆改留策略",
+      "evidence_location": "proposal.md §用地/建筑规模与拆改留方案、chapters/A1-A3.md",
+      "provisional_note": "拆改留比例为概念估算，非精确地块权属数据"
+    },
+    {
+      "item_id": "traffic_rail_slow_parking",
+      "item_title_zh": "交通/轨道/慢行/停车",
+      "item_title_en": "Traffic, Rail, Slow Mobility and Parking",
+      "depth_level": "complete",
+      "coverage": "13号线现状保留（官方）；校际小火车（自动驾驶小巴/八校联通/建议运营公司）；A2站城缝合/A3枢纽型接驳；慢行系统（京张遗址公园纵向带9.3km）；mobility-bluegreen.png展示蓝绿慢行框架",
+      "evidence_location": "proposal.md §交通/轨道/市政、assets/figures/mobility-bluegreen.png",
+      "provisional_note": "新建道路/轨道线位为概念建议，非官方红线"
+    },
+    {
+      "item_id": "municipal_new_infrastructure",
+      "item_title_zh": "市政新基础设施",
+      "item_title_en": "Municipal New Infrastructure",
+      "depth_level": "partial",
+      "coverage": "AI计算共享平台（非传统基础设施+AI标牌）、AI伦理治理开源工具、数字孪生底座（AI修复历史影像/遗址公园虚拟体验）",
+      "evidence_location": "proposal.md §AI创新生态（技术平台章节）",
+      "provisional_note": "市政方案为概念性建议，具体实施方案待后续工程阶段细化"
+    },
+    {
+      "item_id": "blue_green_public_space",
+      "item_title_zh": "蓝绿空间与公共空间",
+      "item_title_en": "Blue-Green Network and Public Space",
+      "depth_level": "complete",
+      "coverage": "小月河蓝带（东翼生态骨架）+ 京张遗址公园绿带（纵向脊柱）；A2公共空间比≥15%（含站城缝合带）；A3公共空间比≥12%（含站点广场）；mobility-bluegreen.png展示蓝绿框架",
+      "evidence_location": "proposal.md §蓝绿空间/公共空间与城市风貌、assets/figures/mobility-bluegreen.png、metrics.json（green_ratio/public_space_ratio）",
+      "provisional_note": "绿地率/公共空间比基于provisional geometry，低置信度，待官方精确数据后复算"
+    },
+    {
+      "item_id": "three_key_area_detailed_design",
+      "item_title_zh": "三处重点区域详细设计",
+      "item_title_en": "Three Key Areas Detailed Design",
+      "depth_level": "complete",
+      "coverage": "A1众智园192.1ha（大学城科创织补/校际小火车/共享平台）；A2北京AI原点社区104.3ha（站城缝合/24/7混合用/平价空间）；A3大钟寺72.0ha（具身智能测试平台/五大赛道）；chapters/A1-A3.md含各区详细设计",
+      "evidence_location": "proposal.md §重点区域详细设计、chapters/A1-A3.md、assets/figures/key-areas.png"
+    },
+    {
+      "item_id": "renewal_project_list",
+      "item_title_zh": "更新项目清单",
+      "item_title_en": "Renewal Project List",
+      "depth_level": "complete",
+      "coverage": "分期实施策略（第一阶2026-2028展示窗口/第二阶2028-2030产业载体/第三阶2030-2035整体运营）；各区重点项目清单",
+      "evidence_location": "proposal.md §更新项目清单/实施政策与分期计划"
+    },
+    {
+      "item_id": "phasing_implementation",
+      "item_title_zh": "分期实施计划",
+      "item_title_en": "Phasing and Implementation",
+      "depth_level": "complete",
+      "coverage": "三阶段：2026-2028（展示窗口/校际小火车/AI场景卡落地）→2028-2030（产业载体/站城缝合/A3具身智能平台）→2030-2035（整体运营/国际影响力）",
+      "evidence_location": "proposal.md §更新项目清单/实施政策与分期计划"
+    },
+    {
+      "item_id": "metrics_recalculation",
+      "item_title_zh": "指标复算",
+      "item_title_en": "Metrics Recalculation",
+      "depth_level": "complete",
+      "coverage": "site_area_sqm（官方公告三区合计368.4ha）、green_ratio（A2≥30%/A3≥25%，provisional/low confidence）、public_space_ratio（A2≥15%/A3≥12%，provisional/low confidence）；EPSG:4548面积计算坐标系已标注",
+      "evidence_location": "metrics.json（core_visual_metrics/three_area_metrics）、proposal.md §指标体系/面积复算",
+      "provisional_note": "绿地率和公共空间比来自provisional geometry，official数据发布后需复算"
+    },
+    {
+      "item_id": "risk_missing_data",
+      "item_title_zh": "风险与数据缺失",
+      "item_title_en": "Risk and Missing Data",
+      "depth_level": "complete",
+      "coverage": "四大风险（数据隐私/权属/技术/合规）；已知数据缺口（官方边界/权属/13号线方案/控规指标）；应对策略（标注provisional/概念建议/长期跟进）",
+      "evidence_location": "compliance_matrix.json（seven_evaluation_dimensions/risk_compliance_awareness）、assumptions.json（known_data_gaps）"
+    }
+  ]
+}
