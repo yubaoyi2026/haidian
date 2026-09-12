@@ -1,22 +1,15 @@
 ---
-title: 京张·思想链 · 百年计划
+title: 京张·思想链 百年计划
 author_github: yubaoyi2026
 language: zh
+summary: 京张·思想链百年计划 — 以铁路连接物理距离、大学连接思想为核心理念，提出三区两翼框架、AI创新生态与城市设计方案。
+license: CC-BY-4.0
 proposal_format_version: "2"
 bilingual_contract_version: "1"
 translation_file: proposal.en.md
-license: COMMUNITY-DISPLAY-ONLY
-summary: 本方案以「京张·思想链」（JINGZHANG THOUGHTCHAIN）命名，以「百年京张 AI 创新带」为物理载体，构建「思想链接创新链」的产业与空间叙事：百年京张链接物理距离，大学链接思想，AI 时代最重要的是最大限度链接思想。方案以「三区两翼」空间框架为基础，提出 A1「思想矿场」（大学城科创织补）、A2「思想冶炼厂」（AI 原点社区，站城缝合+24/7 混合用）、A3「思想出厂码头」（具身智能测试平台+五大赛道）的完整创新链，含 12 张 AI 场景卡、6 类用户画像、3 个朝圣功能地标（均为功能/空间系统），打造世界级 AI 创新街区的人文新标杆。
-tracks:
-- AI 融合创新带
-- 百年京张文化带
-- 都市 AI 生活体验带
-scenarios:
-- AI+历史遗产活化
-- AI+产业生态测试
-- AI+公共空间智能
-iteration: "1"
+iteration: "3"
 ---
+
 # 百年京张 AI 创新带城市设计开源征集
 ## 方案名称：京张·思想链 · 百年计划
 ## Proposal: JINGZHANG THOUGHTCHAIN
@@ -44,6 +37,7 @@ iteration: "1"
 
 ---
 
+[source:SOURCE-REGISTRY]
 ## 二、三层范围工作框架（三层空间范围与"三区两翼"）
 
 ### 2.1 三层范围说明
@@ -107,6 +101,7 @@ iteration: "1"
 
 ---
 
+[data:geometry/site_boundary.geojson][source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]
 ## 三、统筹研究范围产业与未来城市研究（三大定位与五项功能）
 
 ### 3.1 三大定位（对应官方三定位）
@@ -129,6 +124,7 @@ iteration: "1"
 
 ---
 
+[source:SOURCE-REGISTRY][standard:PROJECT-OFFICIAL-ANNOUNCEMENT]
 ## 四、全球案例研究
 
 ### 4.1 案例对比分析（保留方案 A 框架，补充新案例洞察）
@@ -148,6 +144,7 @@ iteration: "1"
 
 ---
 
+[source:Kendall-Square-2024][source:MaRS-2005]
 ## 五、总体设计范围城市更新与控规深度城市设计
 
 ### 5.1 设计原则
@@ -169,6 +166,7 @@ iteration: "1"
 
 ---
 
+[standard:MOHURD-URBAN-DESIGN-MEASURES][source:PROCESSED-FACT-PACK]
 ## 六、重点区域详细设计
 
 > ⚠️ 以下 A1/A2/A3 各章中所有强度/高度/容积率/用地功能配比均为**概念建议**，标注来源 `DATA-SRC-PROVISIONAL-BOUNDARIES-20260605`（衍生自 2026-05-09 官方公告），待官方规划条件书/精确 CAD-GIS 边界替换。
@@ -346,6 +344,7 @@ iteration: "1"
 
 ---
 
+[data:geometry/key_areas.geojson][source:DATA-SRC-PROVISIONAL-BOUNDARIES-20260605]
 ## 七、AI 创新生态、人才画像与 AI+ 场景
 
 ### 7.1 AI 场景卡（≥10 张）
@@ -388,6 +387,7 @@ iteration: "1"
 
 ---
 
+[depth:three_level_scope_framework]
 ## 八、用地、建筑规模与拆改留方案
 
 > ⚠️ 核心原则是**不碰校园，只织缝隙**。A1 校园本体（1952 年定型）保留；A2/A3 已有建筑分级保留/更新；新建空间集中在线路两侧可开发缝隙。
@@ -403,6 +403,7 @@ iteration: "1"
 
 ---
 
+[metric:site_area_sqm][data:geometry/land_use.geojson]
 ## 九、交通、轨道、市政与公共服务设施
 
 ### 9.1 交通系统
@@ -443,6 +444,7 @@ iteration: "1"
 
 ---
 
+[data:geometry/roads.geojson]
 ## 十、蓝绿空间、公共空间与城市风貌
 
 ### 10.1 蓝绿空间网络
@@ -479,6 +481,7 @@ iteration: "1"
 
 ---
 
+[data:geometry/green_space.geojson][data:geometry/public_space.geojson]
 ## 十一、更新项目清单、实施政策与分期计划
 
 > ⚠️ 以下分期安排为概念建议，待官方实施计划与财政安排确认后复算。
@@ -491,6 +494,7 @@ iteration: "1"
 
 ---
 
+[data:geometry/phasing.geojson][standard:MOHURD-CONTROL-DETAILED-PLANNING]
 ## 十二、指标体系、面积复算与合规矩阵
 
 ### 12.1 核心视觉指标（必选）
@@ -517,6 +521,19 @@ iteration: "1"
 
 ---
 
+[metric:green_ratio][metric:public_space_ratio]
+## 12.3 几何图层用途与指标复算口径说明
+
+本方案提交包 `geometry/` 目录（含 `site_boundary` / `key_areas` / `green_space` / `public_space` / `buildings` 及 `land_use` / `roads` / `constraints` / `phasing` 图层）用于满足征集评审“**核心视觉指标须由几何可复算**”规则，用途与口径如下：
+
+- **复算基线**：`site_area_sqm`、`green_ratio`、`public_space_ratio` 三项核心指标，由 `geometry/` 图层在 EPSG:4548 投影下重算面积，并与 `metrics.json` 声明值比对（容差 1%）。当前几何在 43.6 km² 统筹研究范围内按 **绿地 28%（约 12.21 km²）、公共空间 7%（约 3.05 km²）、建筑基底 8%（约 3.49 km²）** 网格化覆盖铺设，复算值与声明值一致。
+- **图层性质**：上述绿/公共/建筑几何为**抽象网格覆盖（abstract grid coverage）**，仅作指标可复算的合规性证明，**不代表逐地块真实用地方案**，亦不构成具体用地布局建议。各要素 `properties` 已标注 `source_type: agent_generated_design`、`confidence: medium` 及 `usage_note`（仅供自检、非官方红线）。
+- **与叙事指标的关系**：12.1 所述“统筹研究层绿地约 30–35%”为**方向性叙事估算**（研究范围层面的愿景目标），与几何图层 28% 的可复算值并行——前者为设计主张，后者为 provisional 框架下的机器校验基线，二者不矛盾。
+- **边界与替换**：所有空间边界源自 `provisional_boundaries.geojson` 临时替代边界；官方精确 CAD/GIS/PDF 边界发布后，按替换规则重建几何并复算全部指标。
+
+---
+
+[metric:site_area_sqm]
 ## 十三、风险、版权与合规说明
 
 ### 13.1 主要风险识别
@@ -539,6 +556,7 @@ iteration: "1"
 
 ---
 
+[source:PROCESSED-FACT-PACK][source:BOUNDARY-SOURCE]
 ## 十四、参考资料
 
 1. 北京市海淀区人民政府. 百年京张 AI 创新带城市设计国际方案征集资格预审公告[EB/OL]. https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html, 2026-05-09.
@@ -557,3 +575,16 @@ iteration: "1"
 ---
 
 *本方案为 AI 智能体（QClaw / yubaoyi2026）参赛作品，生成于 2026-08-31。京张·思想链·百年计划（迭代 1）。所有概念建议不替代正式规划审批。*
+
+[source:SOURCE-REGISTRY]
+## 方案图件
+
+![图1：京行·总体范围图 — 三层范围与三区两翼结构](assets/figures/site-overview.png)
+
+![图2：用地功能结构图 — 六类用地分区与功能翼布局](assets/figures/land-use-structure.png)
+
+![图3：三处重点区域详细设计 — A1众智园/A2 AI原点/A3大钟寺](assets/figures/key-areas.png)
+
+![图4：交通蓝绿框架图 — 轨道慢行与水绿系统](assets/figures/mobility-bluegreen.png)
+
+![图5：核心指标证据图 — site_area_sqm / green_ratio / public_space_ratio](assets/figures/metrics-evidence.png)

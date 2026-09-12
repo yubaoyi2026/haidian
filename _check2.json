@@ -1,5 +1,5 @@
 {
-  "ok": true,
+  "ok": false,
   "submission_dir": "submissions\\yubaoyi2026\\centennial-jingzhang",
   "pr_author": "yubaoyi2026",
   "stage": "formal",
@@ -10,6 +10,10 @@
       "ok": true,
       "errors": [],
       "warnings": [
+        "submissions/yubaoyi2026/centennial-jingzhang/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
+        "submissions/yubaoyi2026/centennial-jingzhang/self_check.json: packages marked ready_for_review must persist ok=true; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
+        "submissions/yubaoyi2026/centennial-jingzhang/self_check.json: packages marked ready_for_review must persist can_enter_formal_review=true; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
+        "submissions/yubaoyi2026/centennial-jingzhang/self_check.json: packages marked ready_for_review must persist pass/blocking gates for DETERMINISTIC_VALIDATION, PROFESSIONAL_EVIDENCE, SPATIAL_REVIEW, VISUAL_PACKAGING; legacy package accepted for intake; run self_check_submission.py --mark-self-checked to migrate",
         "submissions/yubaoyi2026/centennial-jingzhang/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
         "submissions/yubaoyi2026/centennial-jingzhang/assets/figures/land-use-structure.en.png: byte-identical to `assets/figures/land-use-structure.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
         "submissions/yubaoyi2026/centennial-jingzhang/assets/figures/land-use-structure.png: byte-identical to `assets/figures/land-use-structure.en.png`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review",
@@ -78,18 +82,72 @@
       "ai_package_stages": {
         "submissions/yubaoyi2026/centennial-jingzhang": "formal"
       },
-      "total_bytes": 2448447,
+      "total_bytes": 2448249,
       "maintainer_bypass": false
     },
     "stderr": ""
   },
   "spatial_review": {
-    "returncode": 0,
-    "ok": true,
+    "returncode": 1,
+    "ok": false,
     "stdout": {
-      "ok": true,
+      "ok": false,
       "stage": "formal",
       "issues": [
+        {
+          "check_id": "GEOMETRY_VALIDITY",
+          "severity": "major",
+          "target_file": "C:\\Users\\yubaoyi\\.openclaw\\workspace\\haidian\\submissions\\yubaoyi2026\\centennial-jingzhang\\geometry\\land_use.geojson",
+          "message": "Self-intersection[443789.927372823 4430402.84019702]",
+          "target_feature_id": "LU-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "DECLARED_AREA_MISMATCH",
+          "severity": "major",
+          "target_file": "C:\\Users\\yubaoyi\\.openclaw\\workspace\\haidian\\submissions\\yubaoyi2026\\centennial-jingzhang\\geometry\\land_use.geojson",
+          "message": "Declared area differs from projected geometry area.",
+          "target_feature_id": "LU-001",
+          "expected": 2545908.05,
+          "actual": 1929201.0
+        },
+        {
+          "check_id": "DECLARED_AREA_MISMATCH",
+          "severity": "major",
+          "target_file": "C:\\Users\\yubaoyi\\.openclaw\\workspace\\haidian\\submissions\\yubaoyi2026\\centennial-jingzhang\\geometry\\land_use.geojson",
+          "message": "Declared area differs from projected geometry area.",
+          "target_feature_id": "LU-002",
+          "expected": 4145352.942,
+          "actual": 1043237.0
+        },
+        {
+          "check_id": "DECLARED_AREA_MISMATCH",
+          "severity": "major",
+          "target_file": "C:\\Users\\yubaoyi\\.openclaw\\workspace\\haidian\\submissions\\yubaoyi2026\\centennial-jingzhang\\geometry\\land_use.geojson",
+          "message": "Declared area differs from projected geometry area.",
+          "target_feature_id": "LU-003",
+          "expected": 5859740.289,
+          "actual": 720454.0
+        },
+        {
+          "check_id": "DECLARED_AREA_MISMATCH",
+          "severity": "major",
+          "target_file": "C:\\Users\\yubaoyi\\.openclaw\\workspace\\haidian\\submissions\\yubaoyi2026\\centennial-jingzhang\\geometry\\land_use.geojson",
+          "message": "Declared area differs from projected geometry area.",
+          "target_feature_id": "LU-004",
+          "expected": 341578.491,
+          "actual": 1500000.0
+        },
+        {
+          "check_id": "DECLARED_AREA_MISMATCH",
+          "severity": "major",
+          "target_file": "C:\\Users\\yubaoyi\\.openclaw\\workspace\\haidian\\submissions\\yubaoyi2026\\centennial-jingzhang\\geometry\\land_use.geojson",
+          "message": "Declared area differs from projected geometry area.",
+          "target_feature_id": "LU-005",
+          "expected": 756148.438,
+          "actual": 3100000.0
+        },
         {
           "check_id": "KEY_AREA_PROVISIONAL",
           "severity": "minor",
@@ -116,15 +174,78 @@
           "target_feature_id": "PROV-KEY-003",
           "expected": null,
           "actual": null
+        },
+        {
+          "check_id": "LAND_USE_COVERAGE_GAP",
+          "severity": "major",
+          "target_file": "geometry/land_use.geojson",
+          "message": "Land-use polygons do not fully cover site boundary.",
+          "target_feature_id": null,
+          "expected": 43609232.558,
+          "actual": 12420346.632
+        },
+        {
+          "check_id": "LAND_USE_OVERLAP",
+          "severity": "major",
+          "target_file": "geometry/land_use.geojson",
+          "message": "Land-use polygon overlaps `LU-003`.",
+          "target_feature_id": "LU-002",
+          "expected": "no overlap",
+          "actual": 910642.388
+        },
+        {
+          "check_id": "LAND_USE_OVERLAP",
+          "severity": "major",
+          "target_file": "geometry/land_use.geojson",
+          "message": "Land-use polygon overlaps `LU-005`.",
+          "target_feature_id": "LU-002",
+          "expected": "no overlap",
+          "actual": 147030.477
+        },
+        {
+          "check_id": "LAND_USE_OVERLAP",
+          "severity": "major",
+          "target_file": "geometry/land_use.geojson",
+          "message": "Land-use polygon overlaps `LU-005`.",
+          "target_feature_id": "LU-003",
+          "expected": "no overlap",
+          "actual": 170712.776
+        },
+        {
+          "check_id": "METRIC_RECALC_MISMATCH",
+          "severity": "major",
+          "target_file": "metrics.json",
+          "message": "site_area_sqm does not match spatial recomputation.",
+          "target_feature_id": null,
+          "expected": 43609232.558177,
+          "actual": 11412825.386
+        },
+        {
+          "check_id": "METRIC_RECALC_MISMATCH",
+          "severity": "major",
+          "target_file": "metrics.json",
+          "message": "green_ratio does not match spatial recomputation.",
+          "target_feature_id": null,
+          "expected": 0.032301,
+          "actual": 0.123423
+        },
+        {
+          "check_id": "METRIC_RECALC_MISMATCH",
+          "severity": "major",
+          "target_file": "metrics.json",
+          "message": "public_space_ratio does not match spatial recomputation.",
+          "target_feature_id": null,
+          "expected": 0.019178,
+          "actual": 0.073281
         }
       ],
       "metrics": {
         "site_area_sqm": 43609232.558,
-        "green_space_area_sqm": 12210585.116,
-        "public_space_area_sqm": 3052646.279,
-        "building_footprint_area_sqm": 3488738.605,
-        "green_ratio": 0.28,
-        "public_space_ratio": 0.07
+        "green_space_area_sqm": 1408600.768,
+        "public_space_area_sqm": 836345.643,
+        "building_footprint_area_sqm": 310807.184,
+        "green_ratio": 0.032301,
+        "public_space_ratio": 0.019178
       }
     },
     "stderr": ""
@@ -136,9 +257,9 @@
       "ok": true,
       "issues": [],
       "metrics_seen": {
-        "site_area_sqm": 43609233.0,
-        "green_ratio": 0.28,
-        "public_space_ratio": 0.07
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.123423,
+        "public_space_ratio": 0.073281
       }
     },
     "stderr": ""
@@ -152,7 +273,7 @@
       "summary": {
         "standard_matrix_items": 6,
         "design_depth_items": 15,
-        "known_metric_refs_required": 7,
+        "known_metric_refs_required": 5,
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
@@ -167,46 +288,43 @@
     "stderr": ""
   },
   "spatial_issue_ids": [
+    "GEOMETRY_VALIDITY",
+    "DECLARED_AREA_MISMATCH",
+    "DECLARED_AREA_MISMATCH",
+    "DECLARED_AREA_MISMATCH",
+    "DECLARED_AREA_MISMATCH",
+    "DECLARED_AREA_MISMATCH",
     "KEY_AREA_PROVISIONAL",
     "KEY_AREA_PROVISIONAL",
-    "KEY_AREA_PROVISIONAL"
+    "KEY_AREA_PROVISIONAL",
+    "LAND_USE_COVERAGE_GAP",
+    "LAND_USE_OVERLAP",
+    "LAND_USE_OVERLAP",
+    "LAND_USE_OVERLAP",
+    "METRIC_RECALC_MISMATCH",
+    "METRIC_RECALC_MISMATCH",
+    "METRIC_RECALC_MISMATCH"
   ],
   "visual_issue_ids": [],
   "professional_issue_ids": [],
   "missing_review_dependencies": [],
-  "can_enter_formal_review": true,
+  "can_enter_formal_review": false,
   "package_type": "professional_design_package",
-  "review_status": "formal-review-ready",
-  "next_actions": [],
-  "schema_version": "0.1.0",
-  "checks": [
-    {
-      "check_id": "DETERMINISTIC_VALIDATION",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "validate_local_submission.py",
-      "message": "deterministic_validation: PASS"
-    },
-    {
-      "check_id": "SPATIAL_REVIEW",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "spatial_review.py",
-      "message": "spatial_review: PASS"
-    },
-    {
-      "check_id": "VISUAL_PACKAGING",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "visual_review.py",
-      "message": "visual_review: PASS"
-    },
-    {
-      "check_id": "PROFESSIONAL_EVIDENCE",
-      "result": "pass",
-      "severity": "blocking",
-      "target": "professional_review.py",
-      "message": "professional_review: PASS"
-    }
+  "review_status": "revision-requested",
+  "next_actions": [
+    "Resolve formal-readiness warning: submissions/yubaoyi2026/centennial-jingzhang/manifest.json: known_blockers present; submission may pass intake but cannot enter formal professional scoring until resolved",
+    "Repair spatial issue GEOMETRY_VALIDITY: Self-intersection[443789.927372823 4430402.84019702]",
+    "Repair spatial issue DECLARED_AREA_MISMATCH: Declared area differs from projected geometry area.",
+    "Repair spatial issue DECLARED_AREA_MISMATCH: Declared area differs from projected geometry area.",
+    "Repair spatial issue DECLARED_AREA_MISMATCH: Declared area differs from projected geometry area.",
+    "Repair spatial issue DECLARED_AREA_MISMATCH: Declared area differs from projected geometry area.",
+    "Repair spatial issue DECLARED_AREA_MISMATCH: Declared area differs from projected geometry area.",
+    "Repair spatial issue LAND_USE_COVERAGE_GAP: Land-use polygons do not fully cover site boundary.",
+    "Repair spatial issue LAND_USE_OVERLAP: Land-use polygon overlaps `LU-003`.",
+    "Repair spatial issue LAND_USE_OVERLAP: Land-use polygon overlaps `LU-005`.",
+    "Repair spatial issue LAND_USE_OVERLAP: Land-use polygon overlaps `LU-005`.",
+    "Repair spatial issue METRIC_RECALC_MISMATCH: site_area_sqm does not match spatial recomputation.",
+    "Repair spatial issue METRIC_RECALC_MISMATCH: green_ratio does not match spatial recomputation.",
+    "Repair spatial issue METRIC_RECALC_MISMATCH: public_space_ratio does not match spatial recomputation."
   ]
 }

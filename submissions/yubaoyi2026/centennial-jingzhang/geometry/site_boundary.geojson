@@ -22,11 +22,53 @@
         "boundary_precision": "provisional_rough",
         "area_sqm_declared": 11400000,
         "area_sqm_calculated": 11412825.386,
-        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据。"
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official redline、审批依据或精确面积复算依据。",
+        "source_type": "agent_inferred_from_public_data",
+        "geometry_role": "provisional_constraint",
+        "confidence": "medium"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[[116.3407,39.939],[116.3553,39.939],[116.3553,39.965],[116.3533,39.99],[116.3553,40.0265],[116.3427,40.0265],[116.3417,40.006],[116.3397,39.975],[116.3407,39.939]]]
+        "coordinates": [
+          [
+            [
+              116.3407,
+              39.939
+            ],
+            [
+              116.3553,
+              39.939
+            ],
+            [
+              116.3553,
+              39.965
+            ],
+            [
+              116.3533,
+              39.99
+            ],
+            [
+              116.3553,
+              40.0265
+            ],
+            [
+              116.3427,
+              40.0265
+            ],
+            [
+              116.3417,
+              40.006
+            ],
+            [
+              116.3397,
+              39.975
+            ],
+            [
+              116.3407,
+              39.939
+            ]
+          ]
+        ]
       }
     },
     {
@@ -41,11 +83,49 @@
         "boundary_precision": "provisional_rough",
         "area_sqm_declared": 43600000,
         "area_sqm_calculated": 43609232.558,
-        "usage_note": "仅用于 AI agent 统筹研究、展示和临时自检；不得作为 official research boundary、审批依据或精确面积复算依据。"
+        "usage_note": "仅用于 AI agent 统筹研究、展示和临时自检；不得作为 official research boundary、审批依据或精确面积复算依据。",
+        "source_type": "agent_inferred_from_public_data",
+        "geometry_role": "provisional_constraint",
+        "confidence": "medium"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[[116.31885,39.938],[116.36615,39.938],[116.37215,39.965],[116.37215,40.027],[116.33285,40.027],[116.32085,40.0],[116.31285,39.965],[116.31885,39.938]]]
+        "coordinates": [
+          [
+            [
+              116.31885,
+              39.938
+            ],
+            [
+              116.36615,
+              39.938
+            ],
+            [
+              116.37215,
+              39.965
+            ],
+            [
+              116.37215,
+              40.027
+            ],
+            [
+              116.33285,
+              40.027
+            ],
+            [
+              116.32085,
+              40.0
+            ],
+            [
+              116.31285,
+              39.965
+            ],
+            [
+              116.31885,
+              39.938
+            ]
+          ]
+        ]
       }
     }
   ]

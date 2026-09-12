@@ -1,36 +1,12 @@
-# Centennial Jingzhang AI Innovation Belt Urban Design Open Call
-## Plan Name: THOUGHTCHAIN — An Intelligent Artery Spanning a Century
-
 ---
-
-```yaml
-title: THOUGHTCHAIN — An Intelligent Artery Spanning a Century
+title: JINGZHANG THOUGHTCHAIN - A Centennial Plan
 author_github: yubaoyi2026
 language: en
+license: CC-BY-4.0
 proposal_format_version: "2"
 bilingual_contract_version: "1"
-translation_file: proposal.md
-license: COMMUNITY-DISPLAY-ONLY
-summary: >
-  This proposal, titled "THOUGHTCHAIN" (THOUGHTCHAIN), constructs the "Centennial Jingzhang Cultural Journey Axis",
-  using the 1909 Beijing-Zhangjiakou Railway independently designed by Zhan Tianyou as the historical anchor
-  and the 2026 AI Origin Community as the intelligence pole. Through the Jingzhang Railway Heritage Park Vitality Belt,
-  it achieves temporal-spatial stitching between historical heritage and future city.
-  Based on the Three-Areas Two-Wings spatial framework, the plan proposes a dual-wheel drive strategy
-  combining "AI-native scenarios × historic space regeneration," covering 12 AI scenario cards, 6 user personas,
-  3 AI industrial testing & validation scenarios, and 3 AI pilgrimage landmarks,
-  creating a new benchmark for world-class AI innovation districts with strong humanistic character.
-tracks:
-  - AI Fusion Innovation Belt
-  - Centennial Jingzhang Cultural Belt
-  - Urban AI Life Experience Belt
-scenarios:
-  - AI + Historic Heritage Revitalization
-  - AI + Industrial Ecosystem Testing
-  - AI + Public Space Intelligence
-iteration: "1"
-```
-
+translation_of: proposal.md
+iteration: "3"
 ---
 
 ## 1. Naming & Visual Identity
