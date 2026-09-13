@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "proposal_id": "centennial-jingzhang",
+  "author_github": "yubaoyi2026",
+  "iteration": "2",
+  "generated_at": "2026-08-31T08:00:00+08:00",
+  "updated_at": "2026-09-09T15:50:00+08:00",
+
+  "fundamental_assumptions": {
+    "scope_areas": {
+      "assumption": "三层范围面积（43.6km²/11.4km²/368.4ha）来自官方公告（2026-05-09），视为已知/已知可信",
+      "confidence": "high",
+      "source": "SRC-ANNOUNCEMENT-20260509"
+    },
+    "three_area_naming": {
+      "assumption": "A1=众智园AI自主创新加速区/A2=北京AI原点社区/A3=大钟寺AI产业集聚区，来自design_brief.json官方命名",
+      "confidence": "high",
+      "source": "SRC-DESIGN-BRIEF"
+    },
+    "two_wings": {
+      "assumption": "西翼=中关村科技服务翼，东翼=小月河场景赋能翼，来自public-brief.md",
+      "confidence": "high",
+      "source": "SRC-PUBLIC-BRIEF"
+    },
+    "boundary_geometry": {
+      "assumption": "场地边界、绿地边界、公共空间边界来自provisional_boundaries.geojson（DATA-SRC-PROVISIONAL-BOUNDARIES-20260605），为临时边界，非官方精确数据",
+      "confidence": "low",
+      "source": "SRC-GEOMETRY-PROVISIONAL",
+      "status": "provisional",
+      "recalculation_trigger": "Official precise boundary geometry release by open-city-ai"
+    },
+    "green_and_public_space_ratio": {
+      "assumption": "绿地率/公共空间比目标值（A2≥30%/≥15%、A3≥25%/≥12%）基于概念设计估算，provisional geometry下为低置信度",
+      "confidence": "low",
+      "status": "provisional",
+      "recalculation_trigger": "Official precise geometry"
+    },
+    "far_height_controls": {
+      "assumption": "所有容积率、建筑高度建议为概念建议，非官方控规指标，status=conceptual",
+      "confidence": "low",
+      "status": "conceptual"
+    },
+    "retain_renovate_demolish": {
+      "assumption": "拆改留比例为基于provisional geometry的概念估算，非精确地块权属数据",
+      "confidence": "low",
+      "status": "conceptual"
+    },
+    "ai_generated_content": {
+      "assumption": "方案中所有AI生成内容（AI原点时刻钟、全息铁路叙事步道等）已标注来源与工具，不作为事实性历史记录",
+      "confidence": "conceptual"
+    }
+  },
+
+  "known_data_gaps": [
+    "官方精确场地边界geometry（替代provisional_boundaries.geojson）",
+    "官方精确key_areas.geojson",
+    "官方精确用地、道路、绿地、公共空间、约束、分期geometry",
+    "蓝景丽家等更新地块的确切权属与控规指标",
+    "13号线改造的具体方案与时间表",
+    "古建（大钟寺）的精确保护范围与控制指标",
+    "官方五项控制指标（容积率/限高/建筑密度/绿地率/退线）"
+  ],
+
+  "compliance_commitments": {
+    "no_fabricated_official_endorsement": true,
+    "no_unauthorized_copyright": true,
+    "no_specified_far_height": "所有FAR为概念建议，标注status=conceptual",
+    "no_specified_land_tenure": "权属相关内容标注为概念建议",
+    "no_specified_road_alignment": "道路线位为概念建议，非官方红线"
+  }
+}

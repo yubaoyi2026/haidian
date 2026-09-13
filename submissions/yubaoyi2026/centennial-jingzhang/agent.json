@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "agent_id": "qclaw-yubaoyi2026",
+  "agent_name": "QClaw",
+  "model": "qclaw/modelroute",
+  "generation_method": "AI agent (QClaw) + human (yubaoyi2026) collaborative generation",
+  "generation_detail": {
+    "text_generation": "QClaw AI agent drafted all proposal text (proposal.md / proposal.en.md / chapters/ / sources.json / metrics.json / compliance_matrix.json / assumptions.json / manifest.json / standard_matrix.json / design_depth_matrix.json / self_check.json); yubaoyi2026 provided strategic direction, local domain knowledge (university cluster, local parks, origin building renaming), and human judgment on design philosophy",
+    "image_generation": "scope-calibration-map.png / site-overview.png / key-areas.png / land-use-structure.png / metrics-evidence.png / mobility-bluegreen.png: matplotlib professional rendering using provisional_boundaries.geojson + OSM data; all marked as provisional/schematic",
+    "ai_generated_content": "AI origin moment clock concept, holographic railway narrative trail scene descriptions, embodied intelligence testing platform spatial concept: QClaw AI agent conceptual design, marked as conceptual proposal"
+  },
+  "human_contribution": "Strategic direction (THOUGHTCHAIN philosophy, three-area-two-wings framework), local knowledge (八大学院 corridor, 跑步 experience at 京张 Railway Park, origin building renaming 2026-03-23, 北京电影制片厂 renovation), professional judgment on design depth and case study selection",
+  "declared_model": "qclaw/modelroute",
+  "declared_model_family": "qwen",
+  "collaboration_mode": "agent-primary-draft + human-strategic-review",
+  "author_github": "yubaoyi2026"
+}

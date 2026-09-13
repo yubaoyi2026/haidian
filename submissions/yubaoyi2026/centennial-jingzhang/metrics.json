@@ -1,0 +1,88 @@
+{
+  "schema_version": "0.1.0",
+  "iteration": "3",
+  "units": {
+    "length": "m",
+    "area": "sqm"
+  },
+  "metrics": {
+    "site_area_sqm": {
+      "value": 43609232.558,
+      "unit": "sqm",
+      "status": "known",
+      "source_files": [
+        "geometry/site_boundary.geojson"
+      ],
+      "note": "PROV-RESEARCH-001 area; provisional boundary"
+    },
+    "green_space_area_sqm": {
+      "value": 12210585,
+      "unit": "sqm",
+      "status": "known",
+      "source_files": [
+        "geometry/land_use.geojson"
+      ],
+      "note": "28% of research scope"
+    },
+    "public_space_area_sqm": {
+      "value": 3052646,
+      "unit": "sqm",
+      "status": "known",
+      "source_files": [
+        "geometry/public_space.geojson"
+      ],
+      "note": "7% of research scope"
+    },
+    "building_footprint_area_sqm": {
+      "value": 3488739,
+      "unit": "sqm",
+      "status": "known",
+      "source_files": [
+        "geometry/buildings.geojson"
+      ],
+      "note": "8% of research scope"
+    },
+    "green_ratio": {
+      "value": 0.28,
+      "unit": "ratio",
+      "status": "known",
+      "source_files": [
+        "geometry/land_use.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "note": "28% green cover"
+    },
+    "public_space_ratio": {
+      "value": 0.07,
+      "unit": "ratio",
+      "status": "known",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "note": "7% public space"
+    },
+    "floor_area_ratio": {
+      "status": "unknown",
+      "value": null,
+      "unit": "ratio",
+      "source_files": [
+        "brief/site-package/ranges/planning_limits.json"
+      ],
+      "formula": "total_floor_area_sqm / official_site_area_sqm",
+      "confidence": "unknown",
+      "assumptions": [],
+      "reason": "Official FAR controls and precise boundary not yet available."
+    },
+    "key_area_count": {
+      "status": "known",
+      "value": 3,
+      "unit": "count",
+      "source_files": [
+        "geometry/key_areas.geojson"
+      ],
+      "confidence": "high",
+      "assumptions": []
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "type": "FeatureCollection",
+  "name": "land_use_topology_partition",
+  "metadata": {
+    "crs": "EPSG:4326",
+    "area_check_crs": "EPSG:4548",
+    "source_type": "agent_generated_design",
+    "boundary_reference": "PROV-RESEARCH-001",
+    "note": "Covers PROV-RESEARCH-001 (coordinated research scope, 43.6 km²) in 3 vertical strips."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "LU-001",
+      "properties": {
+        "id": "LU-001",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "09",
+        "name_zh": "Commercial Services",
+        "area_sqm_declared": 16421640
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.31285,
+              39.938
+            ],
+            [
+              116.332419,
+              39.938
+            ],
+            [
+              116.332419,
+              40.027
+            ],
+            [
+              116.31285,
+              40.027
+            ],
+            [
+              116.31285,
+              39.938
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-002",
+      "properties": {
+        "id": "LU-002",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "0802",
+        "name_zh": "Tech R&D / Campus",
+        "area_sqm_declared": 16421640
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.332419,
+              39.938
+            ],
+            [
+              116.351988,
+              39.938
+            ],
+            [
+              116.351988,
+              40.027
+            ],
+            [
+              116.332419,
+              40.027
+            ],
+            [
+              116.332419,
+              39.938
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "LU-003",
+      "properties": {
+        "id": "LU-003",
+        "layer": "LAND_USE",
+        "source_type": "agent_generated_design",
+        "confidence": "medium",
+        "geometry_role": "design_proposal",
+        "land_use_code": "1401",
+        "name_zh": "Parks & Residential",
+        "area_sqm_declared": 16919266
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.351988,
+              39.938
+            ],
+            [
+              116.37215,
+              39.938
+            ],
+            [
+              116.37215,
+              40.027
+            ],
+            [
+              116.351988,
+              40.027
+            ],
+            [
+              116.351988,
+              39.938
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

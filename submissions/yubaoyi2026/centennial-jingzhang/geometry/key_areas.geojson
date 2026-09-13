@@ -1,0 +1,160 @@
+{
+  "type": "FeatureCollection",
+  "name": "京张·思想链 三处重点区域边界（临时）",
+  "metadata": {
+    "boundary_status": "maintainer_defined_provisional",
+    "coordinate_reference_system": "EPSG:4326",
+    "area_check_crs": "EPSG:4548",
+    "last_public_source_check": "2026-08-07",
+    "replacement_rule": "Replace all provisional polygons only after an official or cleared CAD/GIS/PDF boundary is obtained and its source, version, coordinate system, and conversion method are recorded."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PROV-KEY-001",
+      "properties": {
+        "id": "PROV-KEY-001",
+        "layer": "KEY_AREA",
+        "area_id": "zhongzhiyuan_ai_acceleration_area",
+        "name_zh": "众智园AI自主创新加速区",
+        "name_en": "Zhongzhiyuan AI Innovation Acceleration Area",
+        "official_name": "众智园AI自主创新加速区",
+        "parent_scope_id": "key_detailed_design_area",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "announced_area_sqm": 1921000,
+        "announced_area_ha": 192.1,
+        "area_sqm_calculated": 1929201.877,
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
+        "source_type": "agent_inferred_from_public_data",
+        "geometry_role": "provisional_constraint",
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.343,
+              40.0075
+            ],
+            [
+              116.354,
+              40.0075
+            ],
+            [
+              116.354,
+              40.026
+            ],
+            [
+              116.343,
+              40.026
+            ],
+            [
+              116.343,
+              40.0075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PROV-KEY-002",
+      "properties": {
+        "id": "PROV-KEY-002",
+        "layer": "KEY_AREA",
+        "area_id": "beijing_ai_origin_community",
+        "name_zh": "北京AI原点社区",
+        "name_en": "Beijing AI Origin Community",
+        "official_name": "北京AI原点社区",
+        "parent_scope_id": "key_detailed_design_area",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "announced_area_sqm": 1043000,
+        "announced_area_ha": 104.3,
+        "area_sqm_calculated": 1043236.909,
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
+        "source_type": "agent_inferred_from_public_data",
+        "geometry_role": "provisional_constraint",
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              39.9835
+            ],
+            [
+              116.353,
+              39.9835
+            ],
+            [
+              116.353,
+              39.9935
+            ],
+            [
+              116.342,
+              39.9935
+            ],
+            [
+              116.342,
+              39.9835
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PROV-KEY-003",
+      "properties": {
+        "id": "PROV-KEY-003",
+        "layer": "KEY_AREA",
+        "area_id": "dazhongsi_ai_industry_cluster",
+        "name_zh": "大钟寺AI产业聚集区",
+        "name_en": "Dazhongsi AI Industry Cluster",
+        "official_name": "大钟寺AI产业聚集区",
+        "parent_scope_id": "key_detailed_design_area",
+        "official_boundary": false,
+        "boundary_precision": "provisional_rough",
+        "announced_area_sqm": 720000,
+        "announced_area_ha": 72.0,
+        "area_sqm_calculated": 720454.221,
+        "usage_note": "仅用于 AI agent 生成、展示和临时自检；不得作为 official key-area polygon、审批依据或精确面积复算依据。",
+        "source_type": "agent_inferred_from_public_data",
+        "geometry_role": "provisional_constraint",
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.342,
+              39.944
+            ],
+            [
+              116.355,
+              39.944
+            ],
+            [
+              116.355,
+              39.94984
+            ],
+            [
+              116.342,
+              39.94984
+            ],
+            [
+              116.342,
+              39.944
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
